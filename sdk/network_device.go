@@ -94,8 +94,10 @@ type ResponseNetworkDeviceGetNetworkDeviceByNameNetworkDeviceTrustsecsettingsDev
 }
 
 type ResponseNetworkDeviceGetNetworkDeviceByNameNetworkDeviceTacacsSettings struct {
-	SharedSecret       string `json:"sharedSecret,omitempty"`       //
-	ConnectModeOptions string `json:"connectModeOptions,omitempty"` // Allowed values: - OFF, - ON_LEGACY, - ON_DRAFT_COMPLIANT
+	SharedSecret               string `json:"sharedSecret,omitempty"`               //
+	ConnectModeOptions         string `json:"connectModeOptions,omitempty"`         // Allowed values: - OFF, - ON_LEGACY, - ON_DRAFT_COMPLIANT
+	PreviousSharedSecret       string `json:"previousSharedSecret,omitempty"`       //
+	PreviousSharedSecretExpiry *int   `json:"previousSharedSecretExpiry,omitempty"` //
 }
 
 type ResponseNetworkDeviceGetNetworkDeviceByNameNetworkDeviceNetworkDeviceIPList struct {
@@ -202,8 +204,10 @@ type ResponseNetworkDeviceGetNetworkDeviceByIDNetworkDeviceTrustsecsettingsDevic
 }
 
 type ResponseNetworkDeviceGetNetworkDeviceByIDNetworkDeviceTacacsSettings struct {
-	SharedSecret       string `json:"sharedSecret,omitempty"`       //
-	ConnectModeOptions string `json:"connectModeOptions,omitempty"` // Allowed values: - OFF, - ON_LEGACY, - ON_DRAFT_COMPLIANT
+	SharedSecret               string `json:"sharedSecret,omitempty"`               //
+	ConnectModeOptions         string `json:"connectModeOptions,omitempty"`         // Allowed values: - OFF, - ON_LEGACY, - ON_DRAFT_COMPLIANT
+	PreviousSharedSecret       string `json:"previousSharedSecret,omitempty"`       //
+	PreviousSharedSecretExpiry *int   `json:"previousSharedSecretExpiry,omitempty"` //
 }
 
 type ResponseNetworkDeviceGetNetworkDeviceByIDNetworkDeviceNetworkDeviceIPList struct {
@@ -385,8 +389,10 @@ type RequestNetworkDeviceUpdateNetworkDeviceByNameNetworkDeviceTrustsecsettingsD
 }
 
 type RequestNetworkDeviceUpdateNetworkDeviceByNameNetworkDeviceTacacsSettings struct {
-	SharedSecret       string `json:"sharedSecret,omitempty"`       //
-	ConnectModeOptions string `json:"connectModeOptions,omitempty"` // Allowed values: - OFF, - ON_LEGACY, - ON_DRAFT_COMPLIANT
+	SharedSecret               string `json:"sharedSecret,omitempty"`               //
+	ConnectModeOptions         string `json:"connectModeOptions,omitempty"`         // Allowed values: - OFF, - ON_LEGACY, - ON_DRAFT_COMPLIANT
+	PreviousSharedSecret       string `json:"previousSharedSecret,omitempty"`       //
+	PreviousSharedSecretExpiry *int   `json:"previousSharedSecretExpiry,omitempty"` //
 }
 
 type RequestNetworkDeviceUpdateNetworkDeviceByNameNetworkDeviceNetworkDeviceIPList struct {
@@ -469,8 +475,10 @@ type RequestNetworkDeviceUpdateNetworkDeviceByIDNetworkDeviceTrustsecsettingsDev
 }
 
 type RequestNetworkDeviceUpdateNetworkDeviceByIDNetworkDeviceTacacsSettings struct {
-	SharedSecret       string `json:"sharedSecret,omitempty"`       //
-	ConnectModeOptions string `json:"connectModeOptions,omitempty"` // Allowed values: - OFF, - ON_LEGACY, - ON_DRAFT_COMPLIANT
+	SharedSecret               string `json:"sharedSecret,omitempty"`               //
+	ConnectModeOptions         string `json:"connectModeOptions,omitempty"`         // Allowed values: - OFF, - ON_LEGACY, - ON_DRAFT_COMPLIANT
+	PreviousSharedSecret       string `json:"previousSharedSecret,omitempty"`       //
+	PreviousSharedSecretExpiry *int   `json:"previousSharedSecretExpiry,omitempty"` //
 }
 
 type RequestNetworkDeviceUpdateNetworkDeviceByIDNetworkDeviceNetworkDeviceIPList struct {
@@ -552,8 +560,10 @@ type RequestNetworkDeviceCreateNetworkDeviceNetworkDeviceTrustsecsettingsDeviceC
 }
 
 type RequestNetworkDeviceCreateNetworkDeviceNetworkDeviceTacacsSettings struct {
-	SharedSecret       string `json:"sharedSecret,omitempty"`       //
-	ConnectModeOptions string `json:"connectModeOptions,omitempty"` // Allowed values: - OFF, - ON_LEGACY, - ON_DRAFT_COMPLIANT
+	SharedSecret               string `json:"sharedSecret,omitempty"`               //
+	ConnectModeOptions         string `json:"connectModeOptions,omitempty"`         // Allowed values: - OFF, - ON_LEGACY, - ON_DRAFT_COMPLIANT
+	PreviousSharedSecret       string `json:"previousSharedSecret,omitempty"`       //
+	PreviousSharedSecretExpiry *int   `json:"previousSharedSecretExpiry,omitempty"` //
 }
 
 type RequestNetworkDeviceCreateNetworkDeviceNetworkDeviceNetworkDeviceIPList struct {

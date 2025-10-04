@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- Added `PreviousSharedSecret` and `PreviousSharedSecretExpiry` fields to TACACS settings structs in `network_device.go` to support TACACS secret rotation (ISE 3.4 Patch 2+).
 
 ## [1.3.6] - 2025-02-13
 ### Added
